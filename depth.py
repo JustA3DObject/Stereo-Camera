@@ -21,7 +21,7 @@ frame_rate = 15
 #Camera speciifications
 B = 4 #Distance between cameras [cm]
 f = 5.7 #Camera lense's focal length [mm]
-alpha = 25 #Camera field of view in horizontal plane [degree]
+alpha = 45 #Camera field of view in horizontal plane [degree]
 
 #Initial values
 count = -1

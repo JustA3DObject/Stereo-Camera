@@ -9,8 +9,8 @@ def add_HSV_filter(frame):
 
     hsv = cv2.cvtColor(blur, cv2.COLOR_BGR2HSV)
 
-    lower_blue = np.array([60, 35, 140]) 
-    upper_blue = np.array([180, 255, 255])
+    lower_blue = np.array([0, 100, 100]) 
+    upper_blue = np.array([179, 255, 255])
  
     mask = cv2.inRange(hsv, lower_blue, upper_blue)
     

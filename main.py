@@ -38,7 +38,7 @@ while True:
 
     plt.imshow(depth)
     plt.axis('off')
-    plt.pause(0.02)
+    plt.pause(0.05)
 
     key = cv2.waitKey(1) & 0xFF
     # check for 'q' key-press
