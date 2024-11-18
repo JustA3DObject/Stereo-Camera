@@ -1,13 +1,5 @@
-import sys
 import cv2
-import numpy as np
-import time
-import imutils
 from matplotlib import pyplot as plt
-import HSV_filter as hsv
-import shape_recognition as shape
-import triangulation as tri
-from vidgear.gears import VideoGear
 
 left_image= cv2.imread("photo_left.jpg", cv2.IMREAD_GRAYSCALE)
 right_image= cv2.imread("photo_right.jpg", cv2.IMREAD_GRAYSCALE)
