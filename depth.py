@@ -16,7 +16,7 @@ streamL = VideoGear(source=1, logging=True).start()
 # define and start the stream on second source ( For e.g #1 index device)
 streamR = VideoGear(source=2, logging=True).start() 
 
-frame_rate = 15
+frame_rate = 120
 
 #Camera speciifications
 B = 4 #Distance between cameras [cm]
