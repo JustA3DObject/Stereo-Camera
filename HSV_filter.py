@@ -11,10 +11,10 @@ def add_HSV_filter(frame):
     #Converting RGB to HSV
     hsv = cv2.cvtColor(blur, cv2.COLOR_BGR2HSV)
 
-    lower_blue = np.array([0, 100, 100])    #Lower limit for red colour in HSV
-    upper_blue = np.array([179, 255, 255])  #Upper limit for red colour in HSV
+    lower_red = np.array([0, 100, 100])    #Lower limit for red colour in HSV
+    upper_red = np.array([179, 255, 255])  #Upper limit for red colour in HSV
  
-    mask = cv2.inRange(hsv, lower_blue, upper_blue)
+    mask = cv2.inRange(hsv, lower_red, upper_red)
     
     #Morphological operations: Erode followed by Dilate to remove noise
     mask = cv2.erode(mask, None, iterations=2)
