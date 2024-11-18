@@ -12,6 +12,7 @@ def find_circle(frame, mask):
 
     if len(contours) > 0:
 
+        #Find largest contour in the mask and use it to compute the minimum enclosing circle and centroid
         c = max(contours, key=cv2.contourArea)
         ((x, y), radius) = cv2.minEnclosingCircle(c)
         M = cv2.moments(c)
@@ -19,6 +20,7 @@ def find_circle(frame, mask):
 
         if radius > 10:
 
+            #Draw the circle and the centroid on the frame and ipdate the list of tracked points
             cv2.circle(frame, (int(x), int(y)), int(radius), (0, 255, 255), 2)
             cv2.circle(frame, center, 5, (0, 0, 0), -1)
 
